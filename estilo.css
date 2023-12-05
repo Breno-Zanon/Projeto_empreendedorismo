@@ -1,0 +1,249 @@
+/* Reset padrão para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações gerais do body */
+body {
+    color: #262626;
+    background-color: #ededed;
+    font-family: 'Public Sans', sans-serif; /* Caso 'Public Sans' não esteja disponível, inclua uma fonte alternativa. */
+}
+
+/* Estilo do header */
+header img {
+    width: 150%;
+}
+
+/* Estilo da seção "Sobre o Projeto" */
+
+
+.sobre-mim h1 {
+    font-size: 40px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.sobre-mim{
+    max-width:  1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.cor-projetos{
+    background-color: #EDEDED;
+}
+.projetos{
+    max-width:  1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.projetos h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 1em;
+}
+.projetos a{
+    text-decoration: none;
+    transition: 0.5s all; 
+}
+.projetos a:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.meus-projetos{
+    max-width:  1100px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.meus-projetos h2{
+    font-size: 25px;
+    padding: 10px 0;
+}
+.meus-projetos p{
+    font-size: 20px;
+}
+.meus-projetos img{
+    width: 150px;
+    border-radius: 10px;
+    border: 2px solid #262626;
+}
+.barbearia-alura, .mario, .florianopolis{
+    height: 300px;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 3px solid #262626;
+    padding: 20px;
+    color: #262626;
+    border-radius: 10px;
+    margin-bottom: 2em;
+    background-color: #828871;
+}
+
+/* Estilo da seção de vídeo */
+.video {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tamanho-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.tamanho-video iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* Estilo da seção de texto */
+.texto {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.texto h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.texto p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    text-align: justify;
+    font-size: 20px;
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center;
+    background-color: #33312e;
+    padding: 20px;
+}
+
+#redes-sociais a {
+    margin-right: 10px;
+}
+
+#redes-sociais img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+#redes-sociais img:hover {
+    transform: scale(1.1);
+}
+
+footer p {
+    color: white;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+/* Estilo da seção de fotos */
+.fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px auto;
+    max-width: 1100px;
+}
+
+.fotos a {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.fotos img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+    border-radius: 20px;
+}
+
+.fotos a:hover img {
+    transform: scale(1.1);
+}
+
+.ft-materiais{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px auto;
+    max-width: 1100px;
+}
+.ft-materiais img{
+    width: 33%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.botao{
+    max-width:  1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.voltar a{
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+    text-decoration: none;
+    color: #262626;
+    background-color: #828871;
+    border-radius: 10px;
+    border: 3px solid #262626;
+}
+.voltar{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    transition: 0.5s all;
+    margin-bottom: 2em;
+}
+.voltar:hover{
+    transform: scale(1.1);
+}
+
+/* Adaptação para telas menores */
+@media screen and (max-width: 700px) {
+    .fotos a {
+        width: calc(50% - 20px);
+    }
+    .sobre-mim, .projetos{
+        margin: auto;
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .sobre-mim h1{
+        font-size: 30px;
+    }
+    .meus-projetos{
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
